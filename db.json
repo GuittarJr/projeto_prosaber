@@ -1,0 +1,13 @@
+{
+    "beneficiarios": [
+      { "id": 1, "nome": "Maiara", "contato": "maiarinha@email.com", "endereco": "Rua A, 123" },
+      {"id":2, "nome":"Geovane","contato":"geovane@email.com","endereco": "Rua B, 123"}
+    ],
+    "livros": [
+      { "id": 1, "titulo": "O Pequeno Príncipe", "autor": "Antoine de Saint-Exupéry", "genero": "Ficção", "isbn":"22212223","estoque": 2},
+      { "id": 1, "titulo": "As crônicas de Narnia", "autor": "Antoine de Saint-Exupéry", "genero": "Ficção", "isbn":"22212223","estoque": 0}
+    ],
+    "doacoes": [
+      { "id": 1, "beneficiario": 1, "livro": 1, "data": "2023-11-23" }
+    ]
+  }

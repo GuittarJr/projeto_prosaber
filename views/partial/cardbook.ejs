@@ -1,0 +1,46 @@
+<% data.forEach((livro, indice) => { %>
+<div class="cardbook">
+    <div class="cardbook--logo">
+        <img src="/img/iconbook.png" alt="icone do card">
+    </div>
+    <div class="cardbook--info">
+        <h1><%= livro.titulo %></h1>
+        <div class="cardbook--span">
+            <span>Autor: <%= livro.autor %></span>
+            <span>Gênero: <%= livro.genero %></span>
+        </div>
+    </div>
+    <div class="cardbook--config">
+        <div class="cardbook--configContainer">
+            <div class="cardbook--edit">
+                <div class="edit--icon--container">
+                    <img src="/img/editbutton.png" alt="botão de edit">
+                </div>
+                editar
+            </div>
+            <div class="cardbook--delete">
+                <div class="delete--icon--container">
+                    <img src="/img/deletebutton.png" alt="botão de deletar">
+                </div>
+                deletar
+            </div>
+         </div>
+        <div class="cardbook--button">
+            <p>#<%= indice + 1 %></p>
+            <div class="span--container--status">
+               <p>Status:</p>
+                <% if (livro.estoque > 0) { %>
+                    <span class="disponivel">Disponível</span>
+                <% } else{ %>
+                    <span class="indisponivel">indisponível</span>
+                <% } %>
+            </div>
+            <button>Doar</button>
+        </div>
+    </div>
+</div>
+<% }); %>
+
+<% if (currentPage < totalPages) { %>
+    <a href="/?page=<%= currentPage + 1 %>">Próxima Página</a>
+<% } %>
