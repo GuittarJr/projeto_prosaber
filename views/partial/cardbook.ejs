@@ -32,10 +32,14 @@
                 <% if (livro.estoque > 0) { %>
                     <span class="disponivel">Disponível</span>
                 <% } else{ %>
-                    <span class="indisponivel">indisponível</span>
+                    <span class="indisponivel">Indisponível</span>
                 <% } %>
             </div>
-            <button>Doar</button>
+            <% if (livro.estoque > 0) { %>
+                <button>Doar</button>
+            <% } else{ %>
+                <button class="semEstoque">Doar</button>
+            <% } %>
         </div>
     </div>
 </div>

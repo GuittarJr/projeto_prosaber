@@ -22,17 +22,19 @@
                 </div>
                 <form action="POST">
                     <p>Preencha os dados deste formulário:</p>
-                    <input type="text" placeholder="Titulo:" required>
+                    <input type="text" placeholder="Titulo:" required id="titulo">
                     <div class="organizer">
-                        <input type="text" placeholder="ISBN:" required>
-                        <input type="text" placeholder="Autor:" required>
+                        <input type="text" placeholder="ISBN:" required id="isbn">
+                        <input type="text" placeholder="Autor:" required id="autor">
                     </div>
                     <div class="organizer">
-                        <input type="text" placeholder="Gênero:" required>
-                        <input type="text" placeholder="Editora:" required>
+                        <input type="text" placeholder="Gênero:" required id="genero">
+                        <input type="text" placeholder="Editora:" required id="editora">
                     </div>
                     <input type="text" placeholder="Estoque:" required>
-                    <button>Registrar</button>
+                    <div class="button_container">
+                        <button class="confirm">Registrar</button>
+                    </div>
                 </form>
             </section>
         </div>

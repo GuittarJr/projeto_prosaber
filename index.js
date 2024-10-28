@@ -15,7 +15,7 @@ app.set('view engine', 'ejs');
 app.get('/',(req,res)=>{
     const page = parseInt(req.query.page) || 1;
     const limit = 3;
-    fetch(`http://localhost:5000/livros?_page=${page}&_limit=${limit}`) 
+    fetch(`http://localhost:5000/livros`) 
     .then(response => response.json())
     .then(data => {
         // Renderizar a view com os dados
